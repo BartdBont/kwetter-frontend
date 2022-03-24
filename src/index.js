@@ -6,6 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { SnackbarProvider } from 'notistack';
 import { BrowserRouter } from 'react-router-dom';
+import { ThemeProvider } from '@mui/system';
+import { themeOptions } from './themeOptions';
 
 const queryClient = new QueryClient();
 
@@ -14,7 +16,9 @@ ReactDOM.render(
     <BrowserRouter>
       <QueryClientProvider client={queryClient}>
         <SnackbarProvider maxSnack={3} autoHideDuration={3000}>
-          <App />
+          <ThemeProvider theme={themeOptions}>
+            <App />
+          </ThemeProvider>
         </SnackbarProvider>
       </QueryClientProvider>
     </BrowserRouter>
