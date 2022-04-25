@@ -4,8 +4,10 @@ WORKDIR /app
 COPY package.json ./
 COPY package-lock.json ./
 
-COPY ./ ./
-
 RUN npm ci
 
-CMD ["npm", "run", "start"]
+COPY . .
+
+EXPOSE 3000
+
+CMD ["npm", "start"]

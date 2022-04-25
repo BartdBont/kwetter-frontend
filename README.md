@@ -1,7 +1,8 @@
 [![Node.js CI](https://github.com/BartdBont/kwetter-frontend/actions/workflows/node.js.yml/badge.svg)](https://github.com/BartdBont/kwetter-frontend/actions/workflows/node.js.yml)
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. `docker build -t bartofzo013/kwetter-frontend:1.0 .` to build the image
+2. `docker run -p 5000:3000 docker.io/bartofzo013/kwetter-frontend:1.0` to run the image locally
 
 ## Available Scripts
 
