@@ -1,4 +1,4 @@
-[![Node.js CI](https://github.com/BartdBont/kwetter-frontend/actions/workflows/CICD.yml/badge.svg)](https://github.com/BartdBont/kwetter-frontend/actions/workflows/CICD.yml)
+[![CICD](https://github.com/BartdBont/kwetter-frontend/actions/workflows/CICD.yml/badge.svg)](https://github.com/BartdBont/kwetter-frontend/actions/workflows/CICD.yml)
 
 # Pulling the image
 
