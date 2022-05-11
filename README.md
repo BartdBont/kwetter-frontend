@@ -1,12 +1,14 @@
-[![Node.js CI](https://github.com/BartdBont/kwetter-frontend/actions/workflows/node.js.yml/badge.svg)](https://github.com/BartdBont/kwetter-frontend/actions/workflows/node.js.yml)
-# Getting Started with Create React App
+[![Node.js CI](https://github.com/BartdBont/kwetter-frontend/actions/workflows/CICD.yml/badge.svg)](https://github.com/BartdBont/kwetter-frontend/actions/workflows/CICD.yml)
 
-1. `docker build -t bartofzo013/kwetter-frontend:1.0 .` to build the image
-2. `docker run -p 5000:3000 docker.io/bartofzo013/kwetter-frontend:1.0` to run the image locally
+# Pulling the image
 
-## Available Scripts
+1. `docker pull bartofzo013/s6-kwetter-frontend` to pull the image
+2. `docker run -d -p 3000:3000 docker.io/bartofzo013/s6-kwetter-frontend:latest` to run the image on port 3000
 
-In the project directory, you can run:
+# Locally
+
+1. `docker build -t bartofzo013/s6-kwetter-frontend:latest .` to build the image
+2. `docker run -p 5000:3000 docker.io/bartofzo013/s6-kwetter-frontend:latest` to run the image locally
 
 ### `npm start`
 
@@ -41,32 +43,6 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
 ### Deployment
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
